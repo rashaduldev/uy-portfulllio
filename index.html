@@ -26,7 +26,7 @@
   <!-- header part -->
   <header class="mx-auto lg:mx-10"> 
     <div class="navbar bg-base-100 mt-5 flex flex-col lg:flex-row">
-      <div class="navbar-start">
+      <div class="gap-16 navbar-start -ml-20 lg:m-auto">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-ghost lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -35,14 +35,37 @@
           </label>
           <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
             <li><a>হোম </a></li>
-            <li>
-              <a>Parent</a>
+          <li tabindex="0">
+            <details>
+              <summary>কোর্স সমূহ</summary>
               <ul class="p-2">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
+                <li><a>ওয়েব ডিজাইন এন্ড ডেভেলপমেন্ট</a></li>
+                <li><a>গ্রাফিক্স ডিজাইন</a></li>
+                <li><a>ডিজিটাল মার্কেটিং</a></li>
               </ul>
-            </li>
-            <li><a>Item 3</a></li>
+            </details>
+          </li>
+          <li><a>যোগাযোগ</a></li>
+          <li tabindex="0">
+            <details>
+              <summary>এডমিশন</summary>
+              <ul class="p-2">
+                <li><a>এডমিশন ফর্ম</a></li>
+                <li><a>সার্টিফিকেট ভেরিফাই</a></li>
+                <li><a>রেজাল্ট</a></li>
+              </ul>
+            </details>
+          </li>
+          <!-- <li>
+        <h2>hello</h2>
+        <ul>
+          <li><a href="">ok</a></li>
+          <li><a href="">ok</a></li>
+          <li><a href="">ok</a></li>
+          <li><a href="">ok</a></li>
+        </ul>
+      </li> -->
+          <li><a>রেজাল্ট</a></li>
           </ul>
         </div>
         <a class="btn btn-ghost normal-case text-xl"><img src="./photos/logo.png" alt=""></a>
@@ -89,11 +112,11 @@
       </div>
     </div>
     <section class="text-center my-5 relative">
-      <div class="mx-auto">
-        <input class="w-full lg:w-2/4 h-12 rounded-full mx-auto" style="border: 1px solid black;" type="text"
+      <div class="">
+        <input class="w-4/5	 lg:w-2/4 h-12 rounded-full mx-auto" style="border: 1px solid black;" type="text"
           placeholder="কোর্স অনুসন্ধান করুন...">
       </div>
-      <div class="absolute right-10 lg:right-96 top-2 cursor-pointer">
+      <div class="absolute right-14 lg:right-96 top-2 cursor-pointer">
         <i class="fa-solid fa-magnifying-glass text-2xl"></i>
       </div>
     </section>
