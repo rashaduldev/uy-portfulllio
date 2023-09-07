@@ -24,8 +24,8 @@
 
 <body>
   <!-- header part -->
-  <header class="mx-auto lg:mx-10"> 
-    <div class="navbar bg-base-100 mt-5 flex flex-col lg:flex-row">
+  <header class="mx-auto lg:mx-10" id="myHeader"> 
+    <div class="navbar bg-base-100 mt-5 flex flex-col lg:flex-row sticky" id="myHeader">
       <div class="gap-16 navbar-start -ml-20 lg:m-auto">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -94,15 +94,6 @@
               </ul>
             </details>
           </li>
-          <!-- <li>
-        <h2>hello</h2>
-        <ul>
-          <li><a href="">ok</a></li>
-          <li><a href="">ok</a></li>
-          <li><a href="">ok</a></li>
-          <li><a href="">ok</a></li>
-        </ul>
-      </li> -->
           <li><a>রেজাল্ট</a></li>
         </ul>
       </div>
@@ -416,6 +407,23 @@
     </section>   
  
   </footer>
+
+  <!-- Javascript file -->
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    console.log(sticky);
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
 </body>
 
 </html>
