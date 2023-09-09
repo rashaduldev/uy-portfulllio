@@ -9,6 +9,15 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- fornt awesome -->
   <script src="https://kit.fontawesome.com/be2168ea2b.js" crossorigin="anonymous"></script>
+  <style>
+    input{
+        height: 45px; 
+
+        border: 1px solid black;
+        width: 50%;
+        border-radius: 1rem;
+    }
+  </style>
 </head>
 <body>
     <header class="mx-auto lg:mx-10" id="myHeader"> 
@@ -92,14 +101,14 @@
     
       </header>
 
-      <main class="h-screen	 w-full text-white text-center">
+      <main class="h-screen	 w-full  text-center">
       <div class="flex">
-        <div class="flex-1">
+        <div class="flex-1 text-white">
             <div class=" bg-[#005EB5] h-screen rounded-lg">
-                <img class="mx-auto" src="./photos/logo.png" alt="">
-                <div class="">
+                <img class="mx-auto py-24" src="./photos/logo.png" alt="">
+                <div class="mt-44">
                     <h2 class="text-5xl">welcome back!</h2>
-                    <p >To Keep Connected with us Please 
+                    <p class="my-10">To Keep Connected with us Please 
                         Sign up with your Personal info
                         </p>
                 </div>
@@ -107,7 +116,13 @@
             
         </div>
         <div class="flex-1">
-            <h2>gjhjh</h2>
+           <h1>Sign Up</h1>
+           <p>Create your account</p>
+         <div class="my-5"> 
+            <input type="text" placeholder="Enter Your Name"><br>
+            <input class="my-10" type="text" placeholder="Enter Your Name"><br>
+            <input type="text" placeholder="Enter Your Name"><br>
+         </div>
         </div>
       </div>
 
